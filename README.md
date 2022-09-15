@@ -27,4 +27,4 @@ Our experiments were conducted on Ubuntu 18.04 using the following tools:
 - Supremica IDE 2.7.1 for formal modelling and synthesis
 - CoppeliaSim 4.2.0 for simulations
 
-If you are just interested in a more detailed description of our workflow and testing scenarios and don't want to isntall any software, you can read overivew.md, scenarioA.md and scenarioB.md, which will provide detailed 
+If you are just only interested in a more detailed description of our workflow and testing scenarios and you do not want to install any software, you can find detailed explanations in overivew.md, scenarioA.md and scenarioB.md.
