@@ -43,4 +43,4 @@ Next, right click on the supervisor and select "hide events". Select all events 
   - MCTS approach: Open "simulate_mcts.py". Select your scenario in line 184 (1=scenario A, 2=scenario B), select your settings in line 184 to 186, and run the script. Results are written to "results/results_mcts_scenario_\*.xml"
   - Random approach: Open "simulate_random_sequences.py", select your settings lin line 9-15, and run the script. Results are written to "results/results_random_scenario_\*.csv"
 
-Again, if you do not want to execute this step, our results are already included in the repository (folder results), so you can inspect them withot having to re-run the simulations.
+Again, if you do not want to execute this step, our results are already included in the repository (folder results), so you can inspect them without having to re-run the simulations.
