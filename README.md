@@ -4,10 +4,10 @@ This repository accomanies our paper "Hazard Analysis of Collaborative Automatio
 
 The repository is structured as follows:
 - doc
-  - overview.md // an general overview of the technical aspects of our work
-  - scenarioA.md // a description of testing scenario A
-  - scenarioB.md // a description of testing scenario B
-  - howto.md // a step-by step guide on how to reproduce our experiments
+  - overview.md // general overview of the technical aspects of our work
+  - scenarioA.md // description of testing scenario A
+  - scenarioB.md // description of testing scenario B
+  - howto.md // step-by step guide on how to reproduce our experiments
 - experiments
   - models
     - supremica // formal models (EFAs, supervisor synthesis)
