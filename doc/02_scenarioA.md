@@ -2,7 +2,7 @@
 
 ## About this scenario
 
-[image](https://user-images.githubusercontent.com/56551323/190413958-3778b358-ed4e-479a-92b7-85f579e888ee.png)
+![image](https://user-images.githubusercontent.com/56551323/190413958-3778b358-ed4e-479a-92b7-85f579e888ee.png)
 
 Fig. 1: Scenario A
 
@@ -29,5 +29,12 @@ Fig. 3: Robot Model R
 ### Safety Specification
 The safety specification SP simply has two locations S0 (q_SP0) (safe) and S1 (q_SP1) (unsafe). The unsafe location represents a collision. Observe that the unsafe location is marked, but only reachable through event collision (c), which has the guard statement (robot_running==1 and collaborative_workspace_occupied==1). In other words, we consider a state a potential collision state if the human is in the collaborative workspace and the robot is running at the same time.
 
-Performing a supervisor synthesis of the system H||R with respect to the Specification SP yields a supervisor with 90 states and 182 transitions. 
+Performing a supervisor synthesis of the system H||R with respect to the Specification SP yields a supervisor with 90 states and 182 transitions which is not depicted here due to its size.  However, users may inspect this supervisor directly in supremica (see the [instructions](doc/01_howto.md)). From this supervisor, we have extracted 22 potentially hazardous sequences (up to a maximum length of 12 human actions).
 
+## Simulation
+The simulation model is depicted in Fig. 1. The human actions from EFA model H are used as simulation inputs to control the digital human model in the simulator. To further vary the range of simulation conditions and expose more hazards, we randomized some parameters of human model, namely its walking speed (+/- 30%), and the goal coordinates of the reaching motion at the robot station (+/- 10cm longitudinally and laterally).
+
+_Note: As you may notice from the sometimes awkward human motions, we use a simplified human model in this case. This example is not about achieving an extremely detailed simulation of human motion, it is about the general idea of searching for hazardous behaviors!_
+
+## Hazards
+The HRC system in this scenario contains two flaws which give rise to hazards: first, there is a certain delay between the time the human enters the safety zone and the stop of the robot, leading to a possible collision hazard if the human approaches sufficiently fast. Second, the safety override button allows the human can deactivate the safeguard, also leading to a collision hazard (although such an override button is unlikely to be found in a real robot system, it serves well for test purposes, since it gives rise to specific unsafe event sequences). Note that each of these hazards may manifest itself in multiple action sequences.
