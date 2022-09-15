@@ -35,3 +35,4 @@ The repository is structured as follows:
   - simulate_mcts.py // MCTS approach 
   - simulate_random_sequences.py // Random approach
   - parse_automaton.py // A script to extract event sequences from synthesized automata
+  - various.py and .so files with utility functions/libraries to facilitate use if coppeliaSim API
