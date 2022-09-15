@@ -1,9 +1,9 @@
 # ICRA2023
 
-# About this repository
+## About this repository
 This repository accompanies our paper "Hazard Analysis of Collaborative Automation Systems: A Two-layer Approach based on Supervisory Control and Simulation" submitted to the IEEE ICRA 2023 conference.
 
-# Contents
+## Contents
 The repository is structured as follows:
 - doc
   - overview.md // general overview of the technical aspects of our work
@@ -23,7 +23,7 @@ The repository is structured as follows:
   - simulate_random_sequences.py // Random approach
   - parse_automaton.py // A script to extract event sequences from synthesized automata
 
-# How to get started
+## How to get started
 
 We recommend that you start by reading the [overview](doc/00_overview.md). After that, if you are just only interested in a more detailed description of our testing scenarios and you do not want to install any software, we recommend that you read the descriptions of [scenario A](doc/02_scenarioA.md) and [scenario B](03_scenarioB.md).
 
