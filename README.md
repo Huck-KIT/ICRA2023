@@ -19,4 +19,5 @@ The repository is structured as follows:
   - simulate_supervisor_sequences.py // two-level approach
   - simulate_mcts.py // MCTS approach 
   - simulate_random_sequences.py // Random approach
+  - parse_automaton.py // A script to extract event sequences from synthesized automata
     
