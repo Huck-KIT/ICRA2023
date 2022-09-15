@@ -6,10 +6,10 @@ This repository accompanies our paper "Hazard Analysis of Collaborative Automati
 ## Contents
 The repository is structured as follows:
 - doc
-  - overview.md // general overview of the technical aspects of our work
-  - scenarioA.md // description of testing scenario A
-  - scenarioB.md // description of testing scenario B
-  - howto.md // instructions on how to reproduce our experiments
+  - [overview.md](doc/00_overview.md) // general overview of the technical aspects of our work
+  - [scenarioA.md](doc/02_scenarioA.md) // description of testing scenario A
+  - [scenarioB.md](doc/03_scenarioB.md) // description of testing scenario B
+  - [howto.md](doc/01_howto.md) // instructions on how to reproduce our experiments
 - experiments
   - models
     - supremica // formal models (EFAs, supervisor synthesis)
@@ -25,7 +25,7 @@ The repository is structured as follows:
 
 ## How to get started
 
-We recommend that you start by reading the [overview](doc/00_overview.md). After that, if you are just only interested in a more detailed description of our testing scenarios and you do not want to install any software, we recommend that you read the descriptions of [scenario A](doc/02_scenarioA.md) and [scenario B](03_scenarioB.md).
+We recommend that you start by reading the [overview](doc/00_overview.md). After that, if you are just only interested in a more detailed description of our testing scenarios and you do not want to install any software, we recommend that you read the descriptions of [scenario A](doc/02_scenarioA.md) and [scenario B](doc/03_scenarioB.md).
 
 If you want to reproduce our experiments our [instructions](doc/01_howto.md) will give you a step-by-step guide. You can also opt to reproduce subsets of the experiments e.g. only the supervisor synthesis, or only the simulations).
 
