@@ -8,9 +8,11 @@ By double-clicking on the automata (green symbols) and safety spec (Red symbols)
 please note that the names of variables and transitions may differ from those used in the
 paper, since we had to shorten the names for a more compact reprsentation in the paper. Functionally, however, the models are equivalent.
 2. For the two-layer approach, you need to synthesize and extract all hazardous behaviors of the human model. To do this:
+  
   2.1 Click on "analyzer", then mark all sub-models in the analyzer pane by clicking on them keeping the shift-key pressed. Then, right-click, select "synthesize", keep the default settings ("standard options") as they are and click on "OK". The synthesized supervisor will appear.
 Next, right click on the supervisor and select "hide events". Select all events except the "collision" event and those events that begin with "human_\*"
 (hiding the events does not change the functionality of the supervisor, but ensures that in the second layer, our extracted event sequences will only contain those events that we use as a simulation input. Compare the discussion on "proactive" and "reactive" events in Sec. III-B of the paper. Then right-click on the resulting supervisor and select export -> xml -> OK. Save the resulting xml file under models/supremica/XML/supervisor_scenario_\*.xml
+  
   2.2 To extract all unsafe sequences from the supervisor, open the script parse_automaton.py and choose the following settings:
     - max_sequence_length sequence = The maximum length of sequences to be extracted (e.g. 10)
     - terminate_on_event = True
