@@ -11,7 +11,7 @@ If you want to reproduce our experiments our [instructions](doc/01_howto.md) wil
 
 To recreate our experiments you need the following sofware:
 - [Supremica](http://supremica.org/) for formal modelling and synthesis
-- [CoppeliaSim](https://www.coppeliarobotics.com/ (version 4.2.0) for simulations
+- [CoppeliaSim](https://www.coppeliarobotics.com/) (version 4.2.0) for simulations
 Both software tools are freely available for academic purposes, with version for both Ubuntu and Windows. We used Ubuntu 18.04.
 
 However, please note that your results may differ slightly as some aspects of our experiments contain non-detmerinism.
