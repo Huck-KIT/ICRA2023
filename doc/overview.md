@@ -19,9 +19,11 @@ In this layer, we use the CoppeliaSim models (see experiments/models/coppeliasim
 
 We deploy three different simulation approaches:
 - Two-layer: The two-layer approach takes the unsafe behaviours synthesized in the first layer (i.e., the sequences contained in action_sequences_supervisor_scenario_\*.csv) and simulates each sequences multiple times with different randomly sampled parameters (e.g., different walking speeds of the human model) until a certain budget of simulation runs is exhausted. This simulation is controlled by the script simulate_supervisor_sequences.py
-- Random: The random approach samples behaviors randomly from the set of all feasible behaivors (i.e., from the sequences contained in action_sequences_human_model_scenario_\*.csv) and executes them in simulation until the bduget until a certain budget of simulation runs is exhausted. This simulation is controlled by the script simulate_supervisor_sequences.py
+- Random: The random approach samples behaviors randomly from the set of all feasible behaviours (i.e., from the sequences contained in action_sequences_human_model_scenario_\*.csv) and executes them in simulation until the bduget until a certain budget of simulation runs is exhausted. This simulation is controlled by the script simulate_supervisor_sequences.py
 - MCTS: This approach uses a Monte Carlo Tree Search algorithm to sample behaviors event by event, using the transitions encoded in human_model_scenario_\*.xml to check whether a given event is feasible in the current state (note that this is only to avoid infeasible events, no inference about potential hazards are drawn from this). The MCTS algorithm receives a risk metric as a reward. By attempting to maximise the reward (and thus, the risk that is associated with an event sequence), MCTS finds behaviours leading to unsafe states.
 
+Each simulation script saves the respective results in a .csv file containing the event sequences along the the parameters and the risk metric.
 
 
+## Reproducing the Experiments
 If you want to reproduce experiments, we recommend to go on by reading howto.md, where more details are explained.
