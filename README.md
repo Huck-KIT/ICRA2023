@@ -21,3 +21,10 @@ The repository is structured as follows:
   - simulate_random_sequences.py // Random approach
   - parse_automaton.py // A script to extract event sequences from synthesized automata
     
+We recommend that you start by reading overview.md. Note that this repository allows you to completeley reproduce our experiments (however, your results may differ slightly as some aspects of our experiments contain non-detmerinism). If you want to do reproduce the experiments, howto.md will give you a step-by-step intstruction. You can also opt to reproduce subsets of the experiments (e.g. only the supervisor synthesis, or only the simulations).
+
+Our experiments were conducted on Ubuntu 18.04 using the following tools:
+- Supremica IDE 2.7.1 for formal modelling and synthesis
+- CoppeliaSim 4.2.0 for simulations
+
+If you are just interested in a more detailed description of our workflow and testing scenarios and don't want to isntall any software, you can read overivew.md, scenarioA.md and scenarioB.md, which will provide detailed 
