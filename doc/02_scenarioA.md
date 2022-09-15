@@ -2,7 +2,7 @@
 
 ## About this scenario
 
-file:///home/huck/Downloads/scenario_edited.png![image](https://user-images.githubusercontent.com/56551323/190413958-3778b358-ed4e-479a-92b7-85f579e888ee.png)
+[image](https://user-images.githubusercontent.com/56551323/190413958-3778b358-ed4e-479a-92b7-85f579e888ee.png)
 
 Fig. 1: Scenario A
 
@@ -26,4 +26,8 @@ Note that in our models, the EFAs do not include any information about the durat
 
 Fig. 3: Robot Model R
 
+### Safety Specification
+The safety specification SP simply has two locations S0 (q_SP0) (safe) and S1 (q_SP1) (unsafe). The unsafe location represents a collision. Observe that the unsafe location is marked, but only reachable through event collision (c), which has the guard statement (robot_running==1 and collaborative_workspace_occupied==1). In other words, we consider a state a potential collision state if the human is in the collaborative workspace and the robot is running at the same time.
+
+Performing a supervisor synthesis of the system H||R with respect to the Specification SP yields a supervisor with 90 states and 182 transitions. 
 
