@@ -26,4 +26,4 @@ Each simulation script saves the respective results in a .csv file containing th
 
 
 ## Reproducing the Experiments
-If you want to reproduce experiments, we recommend to go on by reading howto.md, where more details are explained.
+If you want to reproduce experiments, we recommend to go on by reading howto.md, where we give a step-by-step instruction.
