@@ -7,7 +7,7 @@ The repository is structured as follows:
   - overview.md // general overview of the technical aspects of our work
   - scenarioA.md // description of testing scenario A
   - scenarioB.md // description of testing scenario B
-  - howto.md // step-by step guide on how to reproduce our experiments
+  - howto.md // instructions on how to reproduce our experiments
 - experiments
   - models
     - supremica // formal models (EFAs, supervisor synthesis)
@@ -21,10 +21,10 @@ The repository is structured as follows:
   - simulate_random_sequences.py // Random approach
   - parse_automaton.py // A script to extract event sequences from synthesized automata
     
-We recommend that you start by reading overview.md. Note that this repository allows you to completeley reproduce our experiments (however, your results may differ slightly as some aspects of our experiments contain non-detmerinism). If you want to do reproduce the experiments, howto.md will give you a step-by-step intstruction. You can also opt to reproduce subsets of the experiments (e.g. only the supervisor synthesis, or only the simulations).
+We recommend that you start by reading overview.md. Note that this repository allows you to completeley reproduce our experiments (however, your results may differ slightly as some aspects of our experiments contain non-detmerinism). If you want to do reproduce the experiments, our [instructions](doc/howto.md) will give you a step-by-step guide. You can also opt to reproduce subsets of the experiments (e.g. only the supervisor synthesis, or only the simulations).
 
 Our experiments were conducted on Ubuntu 18.04 using the following tools:
 - Supremica IDE 2.7.1 for formal modelling and synthesis
 - CoppeliaSim 4.2.0 for simulations
 
-If you are just only interested in a more detailed description of our workflow and testing scenarios and you do not want to install any software, we recommend that you read overivew.md, scenarioA.md and scenarioB.md.
+If you are just only interested in a more detailed description of our workflow and testing scenarios and you do not want to install any software, we recommend that you read the [overview](doc/overview.md) and the descriptions of [scenario A](doc/scenarioA.md) and [scenario B](scenarioB.md).
